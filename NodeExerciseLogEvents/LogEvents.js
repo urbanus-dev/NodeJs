@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const { format } = require('date-fns');
+
 async function LogEvents(message) {
     const dateTime = `${format(new Date(), 'yyyyMMdd\tHH:mm:ss')}`;
     const logItem = `${uuidv4()} ${dateTime} ${message}\n`;
@@ -15,4 +16,5 @@ async function LogEvents(message) {
 
     await fs.promises.appendFile('Logs/eventLogs.txt', logItem);
 }
+
 module.exports = LogEvents;

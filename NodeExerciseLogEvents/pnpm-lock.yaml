@@ -11,6 +11,9 @@ importers:
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
+      uuid:
+        specifier: ^10.0.0
+        version: 10.0.0
       uuidv4:
         specifier: ^6.2.13
         version: 6.2.13
@@ -147,6 +150,10 @@ packages:
   undefsafe@2.0.5:
     resolution: {integrity: sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==}
 
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
+    hasBin: true
+
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
@@ -271,6 +278,8 @@ snapshots:
   touch@3.1.1: {}
 
   undefsafe@2.0.5: {}
+
+  uuid@10.0.0: {}
 
   uuid@8.3.2: {}
 
