@@ -9,7 +9,7 @@ async function LogEvents(message) {
     try {
         await fs.promises.mkdir('Logs');
     } catch (error) {
-        if (error.code !== 'EEXIST') {
+        if (error.code !== 'EXIST') {
             throw error;
         }
     }
