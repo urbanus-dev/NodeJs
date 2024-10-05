@@ -9,9 +9,24 @@
 <body>
     <h1>Upcoming Events</h1>
     <button id="add-event-btn">Add New Event</button> 
+    <form id="add-event-form" style="display: none;">
+        <input type="text" name="title" placeholder="Title">
+        <input type="date" name="date" placeholder="Date">
+        <input type="text" name="location" placeholder="Location">
+        <input type="text" name="company" placeholder="Company">
+        <input type="number" name="price" placeholder="Price">
+        <input type="text" name="imageUrl" placeholder="Image URL">
+        <button type="submit">Add Event</button>
+
+    </form>
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="event-details"></div>
+        </div>
+    </div>
     <div class="events-container">
-      
-       
+        <div id="edit-event-form"></div>
     </div>
     
     <script src="./frontent.js"></script>
